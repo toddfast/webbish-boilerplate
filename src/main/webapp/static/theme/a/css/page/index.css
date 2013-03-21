@@ -1,9 +1,8 @@
-
-body {
+#index body {
 	background-color: #eee;
 }
 
-#template {
+#index #template {
 	text-align: center;
 	font-size: 2em;
 }

@@ -1,5 +1,4 @@
-define(["jquery","page","bootstrap","js-template","example","mypackage"],
-	function factory($, page) {
+define(["module"],function factory(module) {
 
 	////////////////////////////////////////////////////////////////////////////
 	// Private members
@@ -12,8 +11,9 @@ define(["jquery","page","bootstrap","js-template","example","mypackage"],
 	////////////////////////////////////////////////////////////////////////////
 
 	$(function onReady() {
-		console.log("Filling template");
-		$("#template").refillTemplate({ name: "World" });
+		// See config.js to see how the value of "foo" configured
+		console.log("Loaded mypackage package module. Value of bar is",
+			module.config().bar);
 	});
 
 

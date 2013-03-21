@@ -1,4 +1,4 @@
-define(["jquery"],function factory($) {
+define(["module"],function factory(module) {
 
 	////////////////////////////////////////////////////////////////////////////
 	// Private members
@@ -10,8 +10,10 @@ define(["jquery"],function factory($) {
 	// Initialization
 	////////////////////////////////////////////////////////////////////////////
 
-	$(document).ready(function() {
-		console.log("Loaded example module");
+	$(function onReady() {
+		// See config.js to see how the value of "foo" configured
+		console.log("Loaded example module. Value of foo is",
+			module.config().foo);
 	});
 
 

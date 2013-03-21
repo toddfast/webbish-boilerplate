@@ -10,7 +10,7 @@ define(["jquery","page","bootstrap","js-template","example"],function factory($,
 	// Initialization
 	////////////////////////////////////////////////////////////////////////////
 
-	$(document).ready(function() {
+	$(function onReady() {
 		console.log("Filling template");
 		$("#template").refillTemplate({ name: "World" });
 	});
